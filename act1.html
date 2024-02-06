@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="act1.css">
+    <title>Activity 1 JavaScript</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Click the button to change text:</h1>
+        <div class="exl">
+            <p id="demo">My first JavaScript statement...</p>
+        </div>
+        <div class="buttons">
+            <button class="btn" type="button" onclick="par1()">Next</button>
+            <button class="btn" type="button" onclick="par2()">Back</button>
+        </div>
+    </div>
+</body>
+<script>
+    function par1() {
+        document.getElementById('demo').innerHTML = 'My first JavaScript';
+    }
+
+    function par2() {
+        document.getElementById('demo').innerHTML = 'Paragraph changed using JavaScript...'
+    }
+</script>
+</html>
